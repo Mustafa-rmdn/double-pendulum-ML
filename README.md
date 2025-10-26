@@ -116,10 +116,13 @@ Comparison between ground truth and predicted double pendulum parameters
 
 
 
-
-
-
 ---
+
+To test the trained models, please download the corresponding checkpoint files from the links below and place them inside the "trained_models_weights" directory.
+
+[**Download trained models**](https://drive.google.com/drive/folders/1Rl8CojIG21a_aYPEf09bDcZCaPZgMPMq?usp=sharing)
+
+
 
 ## 🧰 Reproducibility
 
