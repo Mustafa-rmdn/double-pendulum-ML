@@ -1,6 +1,6 @@
 #  Double Pendulum Inverse Problem
 
-### Predicting Physical Parameters from Chaotic Motion Trajectories using Deep Learning
+## Predicting Physical Parameters from Chaotic Motion Trajectories using Deep Learning
 
 
 ## Project Overview
