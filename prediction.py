@@ -16,20 +16,20 @@ def show_prediction_and_ground_truth(backbone:str, dataloader, n_limit=5):
     if backbone == "Lstm":
 
         model = LSTM_fc_lighting.load_from_checkpoint(
-            "outputs/Lstm/LSTM_model.ckpt",
+            "trained_models_weights/LSTM_model.ckpt",
             learning_rate= 1e-5
         )
     elif backbone == "Transformer":
 
         model = Transformer_lighting.load_from_checkpoint(
-            "outputs/Transformer/Attention_model.ckpt",
+            "trained_models_weights/Attention_model.ckpt",
             learning_rate= 3e-5
         )
     elif backbone == "CNN":
 
 
         model = CNN_lighting.load_from_checkpoint(
-            "outputs/CNN/CNN_model.ckpt",
+            "trained_models_weights/CNN_model.ckpt",
             learning_rate= 3e-5
         )
 
