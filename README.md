@@ -1,10 +1,9 @@
-# 🎯 Double Pendulum Inverse Problem
+#  Double Pendulum Inverse Problem
 
-### Predicting Physical Parameters from Chaotic Motion Trajectories using Deep Learning
+## Predicting Physical Parameters from Chaotic Motion Trajectories using Deep Learning
 
----
 
-## 🧠 Project Overview
+## Project Overview
 
 This project investigates how neural network architectures can **predict the initial physical parameters of a double pendulum system** from its **observed trajectories**.  
 The parameters to be estimated include:
@@ -15,8 +14,8 @@ The parameters to be estimated include:
 
 By analyzing simulated motion data, the models aim to infer these governing parameters, effectively solving a **physics-based inverse problem**.
 
----
-## 💡 Motivation and Significance
+
+## Motivation and Significance
 
 In natural sciences, motion trajectories often encode hidden physical parameters such as mass, length, and spring constants.  
 Extracting these parameters from observed motion is a **challenging inverse problem**, particularly for **chaotic systems** like the double pendulum—where minimal variations in parameters can lead to vastly different dynamics.
@@ -24,7 +23,7 @@ Extracting these parameters from observed motion is a **challenging inverse prob
 This project explores how modern **deep learning architectures** (CNN, LSTM, Transformer) can approximate such inverse mappings, demonstrating their potential for **data-driven physical inference**.
 
 
-## 🧪 Input Data
+## Input Data
 
 Two different data representations were used for model training:
 
@@ -35,7 +34,7 @@ The dataset was **synthetically generated** through simulations of the double pe
 
 ---
 
-## ⚙️ Methodology and Training Setup
+## Methodology and Training Setup
 
 All models were implemented using the **Lightning** framework for reproducible and modular training.  
 
@@ -53,7 +52,7 @@ Separate models were trained for each data representation:
 
 ---
 
-## 🧩 Model Architectures
+## Model Architectures
 
 ### Convolutional Neural Network (CNN)
 - Input: Trajectory images  
@@ -74,11 +73,16 @@ Separate models were trained for each data representation:
 
 Performance of the models was assessed using **MSE** and **R² score** on the test set.
 
-| **Model**   | **Test $R^2$ ** | **Test MSE** |
+| **Model**   | Test $R^2$  | **Test MSE** |
 | :-----------: | :---------------: | :------------: |
 | CNN         | -15.681         | 3.461        |
 | LSTM        | -0.386          | 0.354        |
 | Transformer | 0.415           | 0.126        |
+
+
+# Important Results
+
+<img src="outputs/Figures/Validation_MSE.png" width="45%" alt="Validation_MSE"> <img src="outputs/Figures/Validation_r2.png" width="45%" alt="validation_r2"> <img src="outputs/Figures/Train_mse.png" width="45%" alt="training_mse"> <img src="outputs/Figures/Training_r2.png" width="45%" alt="Training_r2">
 
 ###  Predictions vs Ground Truth
 
@@ -112,10 +116,13 @@ Comparison between ground truth and predicted double pendulum parameters
 
 
 
-
-
-
 ---
+
+To test the trained models, please download the corresponding checkpoint files from the links below and place them inside the "trained_models_weights" directory.
+
+[**Download trained models**](https://drive.google.com/drive/folders/1Rl8CojIG21a_aYPEf09bDcZCaPZgMPMq?usp=sharing)
+
+
 
 ## 🧰 Reproducibility
 
