@@ -2,7 +2,6 @@
 
 ### Predicting Physical Parameters from Chaotic Motion Trajectories using Deep Learning
 
----
 
 ## Project Overview
 
@@ -15,7 +14,7 @@ The parameters to be estimated include:
 
 By analyzing simulated motion data, the models aim to infer these governing parameters, effectively solving a **physics-based inverse problem**.
 
----
+
 ## Motivation and Significance
 
 In natural sciences, motion trajectories often encode hidden physical parameters such as mass, length, and spring constants.  
